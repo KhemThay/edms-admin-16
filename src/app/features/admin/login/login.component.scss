@@ -1,0 +1,257 @@
+.background-image-layout {
+    background-image: url('./../../../assets/images/edms-assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card-box {
+    width: 500px;
+    min-height: 633px !important;
+    margin-left: 185px;
+  }
+  
+  .wrap-card-box {
+    .card-box nb-card-body {
+      overflow: hidden;
+    }
+  }
+  
+  nb-layout-column {
+    justify-content: left !important;
+  }
+  
+  .input-form {
+    height: 52px;
+  }
+  
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .forget-pass-btn {
+    font: normal normal bold 16px/21px Nokora !important;
+    letter-spacing: 0px;
+    color: #014F99 !important;
+    opacity: 1;
+  }
+  
+  .forget-pass-btn {
+    &:hover {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      color: #014F99 !important;
+    }
+  
+    &:active {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+  
+    &::selection {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .test-error {
+    width: 319px;
+  }
+  
+  .fa-heart {
+    color: red
+  }
+  
+  .hr-class {
+    width: 127px;
+    height: 0px;
+    border: 1px solid #EB7C23;
+    border-radius: 1px;
+    background-color: #EB7C23;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+  
+  .text-size {
+    font: normal normal bold 28px/37px Nokora;
+    letter-spacing: 0px;
+    color: #343A40;
+    opacity: 1;
+    margin-top: 18px;
+    margin-bottom: 9px;
+  }
+  
+  .en-text-size {
+    font: normal normal bold 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #343A40;
+    opacity: 1;
+    margin-bottom: 24px;
+  }
+  
+  .kh-text-size {
+    text-align: center;
+    font: normal normal bold 18px/24px Nokora;
+    letter-spacing: 0px;
+    color: #EB7C23;
+    opacity: 1;
+    margin-bottom: 46px;
+  }
+  
+  .btn-style:not(.btn-disabled) {
+    background-color: #014F99 !important;
+    color: white !important;
+    height: 52px;
+    border-color: #014F99 !important;
+  }
+  
+  nb-layout-column {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nb-card {
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /*------  material input start -----*/
+  
+  :host::ng-deep .form-group .mat-form-field-appearance-fill .mat-form-field-flex {
+    background: transparent;
+    border: 1px solid #CED4DA;
+    border-radius: 4px !important;
+    padding: .4em .75em 0 .75em !important;
+    min-height: 52px;
+  }
+  
+  :host::ng-deep .form-group .mat-form-field-underline {
+    display: none;
+  }
+  
+  :host::ng-deep .form-group .mat-placeholder-required {
+    color: red;
+  }
+  
+  :host::ng-deep .form-group .mat-form-field-label-wrapper {
+    line-height: 22px;
+  }
+  
+  :host::ng-deep .form-group input.mat-input-element {
+    line-height: 100%;
+  }
+  
+  :host::ng-deep .form-group .mat-form-field .mat-datepicker-toggle .mat-icon-button {
+    color: #CED4DA;
+  
+    &:hover,
+    &:focus {
+      color: inherit;
+      outline: none;
+    }
+  }
+  
+  :host::ng-deep .form-group .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+  
+  
+  :host::ng-deep .form-group .mat-error {
+    margin-top: 20px;
+  }
+  
+  input[type="password"] {
+    font-family: Verdana;
+  }
+  
+  /*------  material input end -----*/
+  
+  
+  @media (max-width: 575.98px) {
+    body {
+      background-color: pink;
+    }
+  
+    .space-right {
+      margin-right: 60px;
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 858.98px) {
+    .space-right {
+      margin-right: 60px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    nb-layout-column {
+      padding: 1.5rem 1.5rem 0.5rem !important;
+    }
+  }
+  
+  @media (max-width: 859px) {
+    .background-image-layout {
+      display: flex;
+      justify-content: center !important;
+  
+      .card-box {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  
+    nb-card-body {
+      padding: 0;
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 859px) and (max-width: 991.98px) {
+    .space-right {
+      margin-right: 60px;
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .space-right {
+      margin-right: 60px;
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .space-right {
+      margin-right: 60px;
+    }
+  }
+  

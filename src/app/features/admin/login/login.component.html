@@ -1,0 +1,58 @@
+<nb-layout>
+    <nb-layout-column class="background-image-layout">
+      <div class="wrap-card-box">
+        <nb-card class="card-box">
+          <nb-card-body>
+            <div class="text-center mt-2">
+              <img width="100" height="100" class="logo" src="./assets/images/edms-assets/login_logo.png"/>
+  
+              <h4 class="heading text-size">  {{ 'login.subtitle' | translate }}</h4>
+              <h4 class="heading en-text-size">{{ 'login.secoundSubtitle' | translate }}</h4>
+              <hr class="hr-class">
+              <h4 class="heading kh-text-size">{{ 'login.thirtSubtitle' | translate }}</h4>
+            </div>
+            
+            <form #ngForm="ngForm">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <mat-form-field class="w-100" appearance="fill">
+                      <mat-label>{{ 'login.emailPlaceholder' | translate }}</mat-label>
+                      <input 
+                        name="name" 
+                        type="text" 
+                        matInput
+                        #name="ngModel" 
+                        [(ngModel)]="username"
+                      />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group mb-1">
+                    <mat-form-field class="w-100" appearance="fill">
+                      <mat-label>{{ 'login.passwordPlaceholder' | translate }}</mat-label>
+                      <input 
+                        name="password" 
+                        type="password" 
+                        matInput 
+                        #name="ngModel" 
+                        [(ngModel)]="password"
+                      />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <a nbButton outline status="success" style="margin-bottom: 14px;"  class="float-right forget-pass-btn p-0" ghost="true" [routerLink]="'/forget-password'" >{{ 'login.forgetPassword' | translate }}</a>
+  
+              <button type="submit" class="mb-4 btn-style" [nbSpinner]="loading" [disabled]="loading" nbButton fullWidth status="primary" (click)="onLogin()">{{ 'login.loginButton' | translate }}</button>
+            </form>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </nb-layout-column>
+  </nb-layout>
+  
+  
